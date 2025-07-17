@@ -120,10 +120,11 @@ for sbd in sbd_list:
 Khi thu thập đủ có thể phần tích dữ liệu điểm thi
 
 ### Một số lưu ý
+
 - Điểm thi -1 nghĩa là học sinh không thi môn đó.
 - Ta có thể dùng **thread** để gọi nhiều nhiều lần `fetch_diem_thi()`.
 - Khi dùng **thread** có thể nhận được mã lỗi từ server `429`. Điều này nghĩa là ta đã gửi quá nhiều requests. Nên cân nhắc việc thêm điều kiện để dừng hoặc dùng `time.sleep()` để chờ sau đó tiếp tục gửi requests.
-- Khi nhận được dữ liệu điểm thi dạng `json`. Ta nên nhìn vào trường `STT` thay vì `Số báo danh (Id)` để biết dữ liệu có liền mạch hay không. ![Người không thi sẽ được bỏ qua và code không có lỗi ](/images/img9.png)  
+- Khi nhận được dữ liệu điểm thi dạng `json`. Ta nên nhìn vào trường `STT` thay vì `Số báo danh (Id)` để biết dữ liệu có liền mạch hay không. ![Người không thi sẽ được bỏ qua và code không có lỗi ](/images/img10.png)  
 
 
 ### Phân tích dữ liệu
